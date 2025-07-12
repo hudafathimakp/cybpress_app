@@ -40,7 +40,7 @@ class DoctorsView extends GetView<DoctorsController> {
       backgroundColor: AppColor.scaffoldBgColor,
       appBar: CommonAppBar(
         label: 'Doctors',
-        isPdfTap: () => showFilterDialog(context),
+        isPdfTap: (){},
         isFilterTap: () => showFilterDialog(context),
       ),
       body: Padding(
