@@ -28,7 +28,7 @@ class DoctorsView extends GetView<DoctorsController> {
             gender: selectedGender.value,
             timeRange: selectedTime.value,
           );
-          Get.back(); // Close the dialog
+          Get.back(); 
         },
       ),
     );
