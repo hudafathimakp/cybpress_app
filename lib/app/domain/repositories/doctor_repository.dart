@@ -5,28 +5,7 @@ import 'package:dartz/dartz.dart';
 import 'package:cybpress_app/app/domain/network/network_api_services.dart';
 import 'package:cybpress_app/app/failure/failure.dart';
 
-// class DoctorRepository  extends NetworkApiServices {
-//     Future<Either<Failure, DoctorListModel>> getDoctorList() async {
-//     try {
-//       dynamic response = await getApi(
-//         "https://686f534991e85fac42a07d85.mockapi.io/api/v1/test/doctors",
-//       );
 
-//       if (response != null) {
-//         DoctorListModel  data = DoctorListModel .fromJson(
-//           response,
-//         );
-
-//         return Right(data);
-//       } else {
-//         return Left(Failure(response["message"].toString()));
-//       }
-//     } catch (e) {
-//       return Left(Failure(e.toString()));
-//     }
-//   }
-
-// }
 
 class DoctorRepository extends NetworkApiServices {
   Future<Either<Failure, List<DoctorListModel>>> getDoctorList() async {
